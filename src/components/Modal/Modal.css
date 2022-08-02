@@ -1,0 +1,55 @@
+.modal{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, .6);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: scale(0);
+    z-index: 3;
+
+}
+
+.modal.active {
+    transform: scale(1);
+}
+
+.modal_content {
+    width: 300px;
+    height: 700px;
+    border-radius: 20px;
+    background: linear-gradient(to bottom,rgb(86, 84, 84), rgb(1, 1, 1));
+    animation: gradient 5s ease infinite;
+    background-size: 200% 200%;
+
+    color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.modal_img{
+    width: 200px;
+    height: 277px;
+}
+
+.description{
+    margin: 20px 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+.char_descrip{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    line-height: 25px;
+    letter-spacing: 1px;
+}
+
+span{
+    font-weight: bold;
+    color: rgb(4, 247, 198);
+}
